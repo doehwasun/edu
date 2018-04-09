@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+    <script>
+        
+        $(document).ready(
+            function(){
+
+                $("#vbutton").click(
+                    function(){
+                        alert("V 버튼 클릭");
+                    }
+                );
+
+                $("#sbutton").click(
+                    function(){
+                        alert("S 버튼 클릭");
+                    }
+                );
+
+
+            }
+        );
+
+    </script>
+
+</head>
+<body>
+    
+    <div data-role="page">
+        <div data-role="header">
+            <h1>My Title</h1>
+        </div>
+        <div data-role="content">
+            <!--
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#">Benz</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">AUDI</a></li>
+                <li><a href="#">현대자동차</a></li>
+                <li><a href="#">기아자동차</a></li>
+            </ul>
+            
+
+            <form>
+                <label for="slider-0">Input slider:</label>
+                <input type="range" name="slider" id="slider-0"
+                value="25" min="0" max="100">
+            </form>
+            -->
+            <a href="#" id="vbutton" data-role="button" data-icon="star">Start Button</a>
+            <a href="#" id="sbutton" data-role="button" data-icon="star">SS Button</a>
+
+
+        </div>
+        <div data-role="footer">
+            <h4>고맙습니다.</h4>
+        </div>
+    </div>
+
+</body>
+</html>
